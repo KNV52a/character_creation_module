@@ -1,6 +1,40 @@
 from random import randint
 from graphic_arts.start_game_banner import run_screensaver
 
+class Character:
+
+    def __init__(self, char_name: str, char_class: str):
+        self.char_name = char_name
+        self.char_class = char_class
+
+class Warrior(Character):
+    ...
+
+
+class Mage(Character):
+    ...
+
+
+class Healer(Character):
+    ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def attack(char_name: str, char_class: str) -> str:
     """Нанесение урона взависимости от выбранного класса."""
@@ -94,5 +128,3 @@ if __name__ == '__main__':
     print('Воитель, Маг, Лекарь')
     char_class: str = choice_char_class()
     print(start_training(char_name, char_class))
-
-main()
